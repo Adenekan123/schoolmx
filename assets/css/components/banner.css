@@ -1,0 +1,21 @@
+.banner-small{
+    height:30vh;
+    clip-path: none;
+    background: blueviolet;
+}
+
+.banner-small__content{
+    display:flex;
+    justify-content:initial;
+    align-items:center;
+    color: #fff;
+    height: 100%;
+}
+
+.banner-small__jumbo-text{
+    text-transform: uppercase;
+    font-size: 3rem;
+    position: relative;
+    top:6rem;
+}
+

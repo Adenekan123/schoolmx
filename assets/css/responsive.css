@@ -1,0 +1,449 @@
+/* tab */
+
+@media(max-width:1200px) {
+     :root {
+        --thm-font: 'Barlow', sans-serif;
+        --thm-base: #ee464b;
+        --thm-base-rgb: 238, 70, 75;
+        --thm-black: #272839;
+        --thm-black-rgb: 39, 40, 57;
+        --thm-gray: #f4f4f8;
+        --thm-padding: calc(5vw);
+        /* --grid-width:114rem;
+        --gutter-vertical: 2rem;
+        --gutter-horizontal:2rem; */
+        /* --breakpoint-large: 1200px; */
+    }
+    html {
+        font-size: 8px;
+    }
+    .hero-text {
+        font-size: 5rem;
+    }
+    /* toggler-menu */
+    .show-on-mobile {
+        display: block
+    }
+    label[for=close-nav] {
+        display: block;
+        position: relative;
+        transform: translateX(-35rem);
+        top: .5rem;
+    }
+    label[for=close-nav]::after {
+        content: "\2630";
+        display: inline-block;
+        font-size: inherit;
+        transition: all .3s;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: -.5rem;
+    }
+    .nav-box {
+        position: fixed;
+        margin: 0;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 0px;
+        visibility: hidden;
+        padding-left: 3rem;
+        opacity: 0;
+        white-space: nowrap;
+        background-image: linear-gradient( 90deg, var(--thm-gray) 0%, var(--thm-gray) 50%, rgba(128, 124, 124, 0.426) 50%);
+        transition: all .4s ease-in-out;
+    }
+    #close-nav:checked~.nav-box {
+        width: 100vw;
+        visibility: visible;
+        opacity: 1;
+    }
+    #close-nav:checked+label::after {
+        content: "\2716";
+        transform: rotate(360deg) scale(1.4);
+        /* color: #272839;; */
+    }
+    ul.nav {
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        font-size: 3rem;
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+    ul.nav li {
+        font-size: inherit;
+        margin-bottom: 8rem;
+    }
+    ul.nav li a {
+        color: #272839;
+    }
+    /* banner */
+    .banner {
+        /* height: calc(70vh); */
+        padding: 0 var(--thm-padding);
+        padding-top: 3rem;
+        clip-path: polygon(51% 0%, 100% 0%, 100% 100%, 75% 80%, 0% 100%, 0% 0%);
+    }
+    .hero-img-box {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+    }
+    /* features */
+    .feature-apps .app-icon {
+        margin-right: 1.5rem;
+        height: 6.5rem;
+        width: 13.8rem;
+        border-radius: 50%;
+    }
+}
+
+
+/* tab-port */
+
+@media (max-width: 900px) {
+     :root {
+        --thm-font: 'Barlow', sans-serif;
+        --thm-base: #ee464b;
+        --thm-base-rgb: 238, 70, 75;
+        --thm-black: #272839;
+        --thm-black-rgb: 39, 40, 57;
+        --thm-gray: #f4f4f8;
+        --thm-padding: calc(8vw);
+        --grid-width: 114rem;
+        --gutter-vertical: 2rem;
+        --gutter-horizontal: 2rem;
+        --breakpoint-large: 1200px;
+    }
+    body {
+        line-height: 20px;
+    }
+    .text-right {
+        text-align: center;
+    }
+    .social-media {
+        justify-content: center;
+        padding-top: 1rem
+    }
+    .video-box-content h1 {
+        font-size: 4rem
+    }
+    .rating h1 {
+        font-size: initial
+    }
+    [class^="col-"] {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    [class^="col-"]:not(:last-child) {
+        margin-right: 0;
+    }
+    /* toggler-menu */
+    label[for=close-nav] {
+        display: block;
+        position: relative;
+        transform: translateX(-17rem);
+        top: .5rem;
+        right: 0;
+        font-size: 4rem
+    }
+    .brand {
+        font-size: 5rem;
+    }
+    .order-md-first {
+        order: -1;
+    }
+    .banner {
+        /* height: calc(90vh); */
+        padding: 0 var(--thm-padding);
+        padding-top: 3rem;
+        clip-path: polygon(51% 0%, 100% 0%, 100% 100%, 75% 80%, 0% 100%, 0% 0%);
+    }
+    .hero-box {
+        color: #fff;
+        max-width: calc(100vw);
+        align-self: flex-end;
+    }
+    .hero-img-box {
+        position: absolute;
+        top: 45vh;
+        right: 0;
+        display: none;
+    }
+    .hero-box .free-trial {
+        max-width: 55rem;
+    }
+    .free-trial span {
+        /* font-size: 2rem; */
+        padding: 0 2rem;
+    }
+    .hero-sub-text {
+        font-size: 2.5rem;
+        font-weight: 100;
+        line-height: 5rem
+    }
+    .features {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 12rem;
+    }
+    /* .features-header {
+        margin-bottom: 8rem;
+    } */
+    .features-header span.header-description {
+        color: crimson;
+    }
+    .feature-apps>div {
+        display: block;
+    }
+    .feature-app-item {
+        margin-bottom: 3rem;
+    }
+    .features .card {
+        padding: 8rem 5rem;
+        font-size: 2.5rem;
+        font-weight: 540;
+    }
+    .features .card img {
+        height: 12rem;
+        margin-bottom: 7rem;
+    }
+    .features .card:hover {
+        transform: scale(1);
+    }
+    .feature-apps .app-icon img {
+        display: block
+    }
+    .feature-apps .app-icon {
+        width: 7rem;
+        height: 7rem
+    }
+    .customer-row {
+        line-height: 6rem;
+    }
+    .discover {
+        transform: translate(0, 0);
+        margin-top: 3rem;
+    }
+    .features-preview-shapes img:nth-child(3) {
+        display: none;
+    }
+    /* pricing */
+    .pricing .card {
+        padding: 4rem 0;
+        background-size: 20% 35%;
+    }
+    .pricing .card-title {
+        padding: 4rem;
+    }
+    .pricing .card-title span:nth-child(1) {
+        /* font-size: 6rem; */
+        display: block;
+        margin-top: 1rem;
+    }
+    .pricing .card-title span:nth-child(2) {
+        font-size: 2rem;
+        display: block;
+        margin-top: 3rem;
+    }
+    .pricing-access {
+        padding: 4rem 3rem;
+        /* font-size: 2.5rem; */
+    }
+    .pricing-access li {
+        margin-top: 4rem;
+    }
+    .pricing .get-started button {
+        display: block;
+        width: auto;
+        margin: 4rem auto 1rem auto;
+        font-weight: bold;
+    }
+    .pricing .get-started span {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* font-size: 2rem; */
+        margin-bottom: 4rem;
+    }
+    .pricing-foreground img {
+        display: none;
+    }
+    /* clients */
+    .clients-rotating {
+        width: 42rem;
+        height: 42rem;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, #0348dd, #e708d4);
+        padding: .7rem;
+        margin: 0 auto;
+    }
+    .client-texts div {
+        font-size: 4rem;
+        line-height: 7rem;
+    }
+    /* contact */
+    .contact-row {
+        padding: var(--thm-padding);
+        /* font-size: 4rem; */
+    }
+    .contact__icon {
+        /* font-size: 3rem; */
+        margin-bottom: 2rem;
+    }
+    .contact__details {
+        /* font-size: 3rem; */
+        margin-top: 4rem;
+    }
+    .contact-shapes img:nth-child(1) {
+        display: none;
+    }
+    /* .news */
+    .card-content p {
+        font-size: 5rem;
+        /* line-height: 7rem */
+    }
+    /* download */
+    .section-download {
+        padding: 5rem;
+        padding-bottom: 10rem
+    }
+    .download-content {
+        max-width: 100%;
+    }
+    .footer {
+        /* font-size: 3rem; */
+        line-height: 4rem;
+    }
+    /* features page */
+    .banner-small {
+        height: 5vh;
+        /* clip-path: none;
+        background: blueviolet; */
+    }
+    .all-features .card .card-header {
+        padding: 5rem;
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .all-features .card .card-header img {
+        height: 10rem;
+        /* margin-bottom: 2rem; */
+    }
+    .all-features .card .card-text {
+        padding: 1rem;
+        /* font-size: 2.5rem; */
+    }
+    .all-features .card .card-text {
+        padding: 1rem;
+        /* font-size: 1.8rem; */
+    }
+    .all-features__item {
+        /* font-size: 3rem; */
+        line-height: 3rem;
+        padding: 0px;
+    }
+    .all-features__item:not(:last-child) {
+        margin-bottom: 3.5rem;
+    }
+    .all-features__header {
+        /* font-size: 4rem; */
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* phone */
+
+@media(max-width:650px) {
+    /* utilities */
+    .hero-button-outline {
+        padding: 3rem 6rem;
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        /* font-size: 3rem; */
+        font-weight: bold;
+        border-radius: .3rem;
+        outline: none;
+        transition: all .5s;
+    }
+    .nav-box {
+        background-image: linear-gradient( 90deg, var(--thm-gray) 0%, var(--thm-gray) 70%, rgba(128, 124, 124, 0.426) 70%);
+        transition: all .4s ease-in-out;
+    }
+    /* toggler-menu */
+    label[for=close-nav] {
+        transform: translateX(-50%);
+        font-size: 4rem
+    }
+    .header-button {
+        display: none;
+    }
+    .brand {
+        font-size: 4rem;
+        align-self: flex-end;
+        color: #fff;
+    }
+    .banner {
+        padding: 0 var(--thm-padding);
+        padding-top: 3rem;
+        clip-path: polygon(51% 0%, 100% 0%, 100% 100%, 75% 80%, 0% 100%, 0% 0%);
+    }
+    .hero-box {
+        color: #fff;
+        max-width: calc(100vw);
+        align-self: flex-end;
+    }
+    .hero-sub-text {
+        font-size: 2rem;
+        /* line-height: 6rem */
+    }
+    .hero-img-box {
+        position: absolute;
+        top: 45vh;
+        right: 0;
+        display: none;
+    }
+    .pricing .card {
+        padding: 2rem 0;
+        background-size: 62% 32%;
+    }
+    .pricing .card-title {
+        padding: 2rem;
+    }
+    .feature-apps .app-icon {
+        margin-right: 1.5rem;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+    }
+    /* features page */
+    .all-features .card .card-header {
+        padding: 5rem;
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .all-features .card .card-header img {
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+    .all-features .card .card-text {
+        padding: 3rem;
+        font-size: 3rem;
+    }
+    /* footer */
+    .contact__details {
+        display: block;
+    }
+}
+
+
+/* xtra small screens */
+
+
+/* @media(max-width:320px) {
+    html {
+        font-size: 4px;
+    }
+} */

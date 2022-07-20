@@ -1,0 +1,117 @@
+<!-- <section class="clents position-relative" id="testimonials">
+                <div class="client-shapes">
+                    <img src="assets/img/banner-shapes-1-4.png" class="position-absolute" alt="">
+                    <img src="assets/img/banner-shapes-1-7.png" class="position-absolute" alt="">
+                </div>
+                <div class="client-box king-padding">
+                    <div class="row">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="clients-rotating position-relative" id="clients-rotating">
+                                <div class="clients-img">
+                                    <div class="clients-icon clients-icon-1 client-active d-flex justify-content-center flex-align-center position-absolute" data-name="Abdullah.U">
+                                        <i class="fa fa-user fa-2x "></i>
+                                    </div>
+                                    <div class="clients-icon clients-icon-2  d-flex justify-content-center flex-align-center position-absolute" data-name="Adeyemi.O.J">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+                                    <div class="clients-icon clients-icon-3 d-flex justify-content-center flex-align-center position-absolute" data-name="Jamiu.Z">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+                                    <div class="clients-icon clients-icon-4 d-flex justify-content-center flex-align-center position-absolute" data-name="Zakr.S">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+                                    <div class="clients-icon clients-icon-5 d-flex justify-content-center flex-align-center position-absolute" data-name="Ishola.A">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+                                    <div class="clients-icon clients-icon-6 d-flex justify-content-center flex-align-center position-absolute" data-name="Ayinde.K">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="client-inner-border d-flex justify-content-center flex-align-center ">
+                                    <div class="client-img-preview text-center ">
+                                        <h3 id="client-name">Client Name</h3>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 wow fadeInRight">
+                            <div class="clients-text-box">
+                                <div class="features-header ">
+                                    <span class="header-description">Checkout Latest posts</span>
+                                    <h3 class="feature-header-text">What our clients are saying</h3>
+                                </div>
+                                <div class="clients">
+                                    <div class="client-texts owl-carousel" id="">
+                                        <div id="client-text-1" aria-hidden="false"> 1 This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </div>
+                                        <div id="client-text-2" aria-hidden="true"> 2 This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </div>
+                                        <div id="client-text-3" aria-hidden="true"> 3 This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </div>
+                                        <div id="client-text-4" aria-hidden="true"> 4 This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </div>
+                                        <div id="client-text-5" aria-hidden="true"> 5 This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </div>
+                                        <div id="client-text-6" aria-hidden="true"> 6 This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+
+
+
+<!-- <section class="questions position-relative">
+                <div class="questions-shapes">
+                    <img src="assets/img/cta-1-shape-1.png" alt="" class="position-absolute">
+                    <img src="assets/img/faq-shape-2.png" alt="" class="position-absolute">
+                </div>
+                <div class="question__box king-padding">
+                    <div class="features-header text-center">
+                        <span class="header-description">Frequently Asked Questions</span>
+                        <h3 class="feature-header-text">Have any Question?</h3>
+                    </div>
+
+                    <div class=" accordion question-accordion wow fadeIn" data-wow-duration="1500ms" id="accordion">
+                        <h3 class="accordion__header accordion__header-active">Pre and post launch mobile app marketing pitfalls to avoid</h3>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.
+                            </p>
+                        </div>
+                        <h3 class="accordion__header accordion__header-disabled">Pre and post launch mobile app marketing pitfalls to avoid</h3>
+                        <div class="accordion__body">
+                            <p>
+                                There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.
+                            </p>
+                        </div>
+                        <h3 class="accordion__header accordion__header-disabled">Pre and post launch mobile app marketing pitfalls to avoid</h3>
+                        <div class="accordion__body">
+                            <p>
+                                There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.
+                            </p>
+                        </div>
+                        <h3 class="accordion__header accordion__header-disabled">Pre and post launch mobile app marketing pitfalls to avoid</h3>
+                        <div class="accordion__body">
+                            <p>
+                                There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section> -->

@@ -1,0 +1,384 @@
+.p-3 {
+    padding: 3rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+
+/* button style */
+
+.hero-button-outline {
+    padding: 2rem 6rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: .3rem;
+    outline: none;
+    transition: all .5s;
+}
+
+.hero-button-outline:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.316) 0%, rgba(255, 255, 255, 0.282) 100%);
+    border-color: transparent;
+    box-shadow: -.3rem .3rem 2rem rgba(230, 227, 227, 0.152), .3rem -.3rem 2rem rgba(230, 227, 227, 0.166);
+    transform: translateY(-3px);
+    outline: none;
+}
+
+.hero-button-outline:active {
+    transform: translateY(0);
+}
+
+.btn-discover {
+    all: unset;
+    display: inline-block;
+    padding: 1.5rem 6rem;
+    background: rgb(233, 220, 23);
+    background: linear-gradient(297deg, rgba(233, 220, 23, 1) 0%, rgba(204, 4, 75, 1) 64%);
+    background-size: 120%;
+    border: 0px solid;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    transition: all .2s ease-out;
+    outline: none;
+}
+
+.btn-discover:hover {
+    background: linear-gradient(27deg, rgba(233, 220, 23, 1) 0%, rgba(204, 4, 75, 1) 64%);
+    background-size: 80%;
+    box-shadow: -.5rem .5rem 5rem rgba(243, 20, 20, 0.377), .5rem -.5rem 5rem rgba(248, 180, 8, 0.37);
+}
+
+.btn-discover:active {
+    background-size: 100%;
+    box-shadow: -.1rem .1rem 1rem rgba(243, 20, 20, 0.377), .1rem -.1rem 1rem rgba(248, 180, 8, 0.37);
+}
+
+.btn-discover-purple {
+    padding: 2.5rem 6rem;
+    background: rgb(233, 220, 23);
+    background: linear-gradient(297deg, rgb(27, 23, 233) 0%, rgb(149, 5, 186) 64%);
+    border: 0px solid;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+
+/* button style ends */
+
+
+/* card style */
+
+.card {
+    padding: 2rem;
+    box-shadow: 0px 0px 3rem 0px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    transition: transform .2s linear;
+    backface-visibility: hidden;
+}
+
+.card-title {
+    text-transform: capitalize;
+}
+
+
+/* card style ends */
+
+
+/* accordion */
+
+.accordion {
+    font-size: 1.8rem;
+    counter-reset: item 0;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.accordion__header {
+    background-color: #fff;
+    border-color: rgb(221, 221, 221);
+    color: crimson;
+    text-align: left;
+    counter-increment: item;
+    position: relative;
+}
+
+.accordion__header::before {
+    content: "0"counter(item);
+    display: inline-block;
+    position: absolute;
+    left: -3rem;
+    top: .0rem;
+    font-size: 5rem;
+    color: rgb(221, 221, 221);
+    letter-spacing: .3rem
+}
+
+.accordion__header:not(:last-of-type) {
+    border-bottom: 0px;
+}
+
+
+/* .accordion__header-active::after{
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        border: 1px solid;
+        right: 2.5rem;
+        top: .6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, crimson,gold);
+        color: #fff;
+    } */
+
+
+/* .accordion__header-disabled::after{
+        content: "\2212";
+        font-size: 2rem;
+        position: absolute;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        border: 1px solid;
+        right: 2.5rem;
+        top: .6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, rgb(119, 1, 148),rgb(74, 24, 255));
+        color: #fff;
+    } */
+
+.accordion__text {
+    text-align: left;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 3rem;
+    padding-left: 5rem;
+    border-color: rgb(5, 5, 165);
+    position: relative;
+}
+
+.ui-accordion .ui-accordion-header:active {
+    border: 0px;
+}
+
+.ui-accordion .ui-accordion-content {
+    line-height: 2.5rem;
+    border-color: rgb(5, 5, 165);
+    height: auto;
+    padding-left: 6.2rem;
+}
+
+#accordion .ui-accordion-header-active::after {
+    content: "\2212";
+    font-size: 2rem;
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 1px solid;
+    right: 2.5rem;
+    top: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, crimson, gold);
+    color: #fff;
+    transition: all .2s
+}
+
+.ui-state-default::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 1px solid;
+    right: 2.5rem;
+    top: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(119, 1, 148), rgb(74, 24, 255));
+    color: #fff;
+    transition: all 1s
+}
+
+.btn-block {
+    width: 100%;
+}
+
+
+/* accordion ends*/
+
+.u-row-same-gutter-small {
+    margin-bottom: .8rem!important;
+}
+
+.u-row-same-gutter-small [class^="col-"]:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.u-jumbo-text {
+    font-size: 4rem;
+    line-height: 5.5rem;
+    font-weight: bold;
+}
+
+.u-sub-jumbo-text {
+    font-size: 2.5rem;
+    color: rgb(141, 141, 141);
+}
+
+@media(max-width:650px) {
+    /* accordion */
+    .accordion {
+        font-size: 3rem;
+        max-width: 90%;
+    }
+    /* .accordion__header{
+        background-color:#fff;
+        border-color: rgb(221, 221, 221);
+        color: crimson;
+        text-align: left;
+        counter-increment: item;
+        position: relative;
+    } */
+    .accordion__header::before {
+        content: "0"counter(item);
+        display: inline-block;
+        position: absolute;
+        left: -3rem;
+        top: .0rem;
+        font-size: 5rem;
+        color: rgb(221, 221, 221);
+        letter-spacing: .3rem
+    }
+    .ui-accordion .ui-accordion-header {
+        padding: 4rem;
+        padding-left: 5rem;
+        padding-top: 6rem;
+    }
+    /* .ui-accordion .ui-accordion-header:active{
+        border: 0px;
+    } */
+    .ui-accordion .ui-accordion-content {
+        line-height: 2em;
+        border-color: rgb(5, 5, 165);
+        height: auto;
+        padding-left: 6.2rem;
+    }
+    #accordion .ui-accordion-header-active::after {
+        content: "\2212";
+        font-size: 2.5rem;
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        border: 1px solid;
+        right: 2.5rem;
+        top: .6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, crimson, gold);
+        color: #fff;
+        transition: all .2s
+    }
+    .ui-state-default::after {
+        content: "\002B";
+        font-size: 2.5rem;
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        border: 1px solid;
+        right: 2.5rem;
+        top: .6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, rgb(119, 1, 148), rgb(74, 24, 255));
+        color: #fff;
+        transition: all 1s
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__content {
+    width: 75%;
+    height: 62rem;
+    background-color: rgba(255, 255, 255);
+    /* padding:5rem; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform .5s;
+    transition: all .5s ease-out;
+}
+
+.popup:target .popup__content {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup__close {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 200%;
+}
+
+.popup__close:hover .popup {
+    opacity: 0;
+    background-color: red;
+}
+
+.popup__video,
+.popup__video--iframe {
+    width: 100%;
+    height: 100%;
+}
