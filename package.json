@@ -1,0 +1,15 @@
+{
+  "name": "schoolmx",
+  "version": "1.0.0",
+  "description": "Majadtek school solution",
+  "main": "index.html",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Adenekan Uthman",
+  "license": "ISC"
+}

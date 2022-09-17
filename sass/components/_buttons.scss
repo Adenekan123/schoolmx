@@ -1,0 +1,62 @@
+.btn{
+    border: 0px;
+    padding: 1.5rem 5rem;
+    background-color:$color-white;
+    border-radius: 3px;
+    text-align:center;
+    font-size: $default-font-size;
+    color: $color-white;
+    width: auto;
+    margin:0 auto;
+    text-transform: capitalize;
+
+    @include responsive(tab-port){
+        font-size: 3rem;
+    }
+
+    &--outlined{
+        border: 2px solid $color-white;
+        background-color:transparent;
+
+        &:hover{
+            background-color: darken($bg-secondary,30);
+        }
+        @include responsive(tab-port){
+            font-size: 2.5rem;
+        }
+    }
+    &--outlined-dark{
+        border: 2px solid $color-black;
+        color: $color-black;
+        background-color:transparent;
+        @include responsive(tab-port){
+            font-size: 2.5rem;
+        }
+    }
+
+    &--block{
+        width: 100%;
+    }
+
+    &--primary{
+        background-image: linear-gradient(to right, $bg-primary-light, $bg-secondary);
+        padding: 2.5rem 5rem;
+        outline:none;
+        transition:all .4s ease;
+        backface-visibility: hidden;
+
+        &:hover{
+            box-shadow:
+             -.8rem -.8rem 2rem rgba($bg-secondary,.3),
+             .8rem .8rem 2rem rgba($bg-primary,.3);
+            transform: translateY(-3px);
+            background-size:80%;
+        }
+
+        &:active{
+            box-shadow:none;
+            background-size:150%;
+        }
+    }
+}
+

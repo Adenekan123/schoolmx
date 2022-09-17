@@ -1,0 +1,115 @@
+.row{
+    max-width: 100%;
+    margin:0 auto;
+
+
+    @include clearfix;
+
+    &:not(last-child){
+        margin-bottom: $row-gap;
+    }
+}
+
+[class^="col-"]{
+    float: left;
+
+    &:not(:last-child){
+        margin-right: $column-gap;
+
+        @include responsive(tab-port){
+            margin-right: 0em;
+        }
+    }
+
+    @include responsive(tab-port){
+        &:not(.abs-grid){
+              width: 100%!important;
+        margin-bottom: $column-gap;
+        }
+      
+    }
+}
+
+.abs-grid{
+    @include responsive(phone){
+        width: 100%!important;
+        margin-bottom: .5rem;
+    }
+}
+
+.col-1-of-12{
+    width: calc(  (100% - 11 * #{$column-gap})/12);
+}
+.col-2-of-12{
+    width: calc( 2 *  ((100% - 11 * #{$column-gap})/12 ) + #{$column-gap});
+}
+.col-3-of-12{
+    width: calc( 3 *  ((100% - 11 * #{$column-gap})/12 ) + 2 * #{$column-gap});
+}
+.col-4-of-12{
+    width: calc( 4 *  ((100% - 11 * #{$column-gap})/12 ) + 3 * #{$column-gap});
+}
+.col-5-of-12{
+    width: calc( 5 *  ((100% - 11 * #{$column-gap})/12 ) + 4 * #{$column-gap});
+}
+.col-6-of-12{
+    width: calc( 6 *  ((100% - 11 * #{$column-gap})/12 ) + 5 * #{$column-gap});
+}
+.col-7-of-12{
+    width: calc( 7 *  ((100% - 11 * #{$column-gap})/12 ) + 6 * #{$column-gap});
+}
+.col-8-of-12{
+    width: calc( 8 *  ((100% - 11 * #{$column-gap})/12 ) + 7 * #{$column-gap});
+}
+.col-9-of-12{
+    width: calc( 9 *  ((100% - 11 * #{$column-gap})/12 ) + 8 * #{$column-gap});
+}
+.col-10-of-12{
+    width: calc( 10 *  ((100% - 11 * #{$column-gap})/12 ) + 9 * #{$column-gap});
+}
+.col-11-of-12{
+    width: calc( 11 *  ((100% - 11 * #{$column-gap})/12 ) + 10 * #{$column-gap});
+}
+.col-12-of-12{
+    width: 100%;
+}
+
+
+//form grid
+
+.form-row{
+    @include clearfix;
+
+    &:not(:last-child){
+        margin-bottom: $form-gap;
+    }
+}
+
+[class^="form-col"]{
+    float: left;
+
+    &:not(:last-child){
+        margin-right: $form-gap;
+        @include responsive(phone){
+            margin-right:0rem;
+        }
+    }
+
+    @include responsive(phone){
+        width:100%!important;
+        // margin-bottom: 3rem;
+    }
+    
+}
+
+.form-col-1-of-3{
+    width: calc( (100% - 2 * #{$form-gap}) /3) ;
+}
+.form-col-2-of-3{
+    width: calc((100% - 1 * #{$form-gap}) /2) ;
+}
+.form-col-3-of-3{
+    width: calc((100% - 0 * #{$form-gap}) /1) ;
+}
+
+

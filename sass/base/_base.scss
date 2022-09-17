@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+$default-font-size:1.8rem;
+@include responsive(tab-port){
+    $default-font-size:3rem;
+}
+
+
+html{
+    font-size: 10px;
+    line-height: 40px;
+
+    @include responsive(tab-land){
+        font-size: 56.25%;
+    }
+    @include responsive(tab-port){
+        font-size: 50%;
+    }
+    @include responsive(phone){
+        font-size: 45%;
+    }
+    @include responsive(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+   
+}
+
+body{
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.wrapper{
+    margin: 0 $global-margin;
+    @include responsive(tab-land){
+        margin: 0 5rem;
+    }
+}
+.global-padding{
+    padding: $global-margin;
+}

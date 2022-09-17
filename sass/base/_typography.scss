@@ -1,0 +1,76 @@
+.heading-primary{
+    font-size: 8rem;
+    color: $color-white;
+    line-height: 9rem;
+
+   
+}
+.heading-primary--sub{
+    font-size: 2rem;
+    color: $color-grey-light;
+    
+        @include responsive(tab-port){
+            font-size: 3rem;
+        }
+        @include responsive(phone){
+            line-height:5rem
+        }
+}
+
+.heading{
+    &--tertiary{
+        font-size: 5rem;
+        line-height:6rem;
+
+        // @include responsive(tab-land){
+        //     font-size: 4rem;
+        //     line-height:5rem;
+        // }
+
+        @include responsive(phone){
+            font-size: 4rem;
+        }
+    }
+    &--tertiary--sub{
+        color:$bg-secondary;
+        font-size: $default-font-size;
+        text-transform: capitalize;
+        @include responsive(tab-port){
+            font-size: 3rem;
+        }
+    }
+
+    &--senior{
+        font-size:4rem;
+        font-weight: bold;
+        line-height: 5rem;
+
+    }
+    &--senior-2{
+        font-size:8rem;
+        font-weight: bold;
+    }
+    &--junior{
+        font-size:2rem;
+        font-weight: bold;
+
+        
+        @include responsive(tab-land){
+            font-size: 3.5rem;
+        }
+    }
+    &--junior-2{
+        font-size:rem;
+        font-weight: bold;
+    }
+}
+
+.letter-spacing--2{
+    letter-spacing:.2rem ;
+}
+.letter-spacing--4{
+    letter-spacing:.4rem ;
+}
+.letter-spacing--8{
+    letter-spacing:.8rem ;
+}

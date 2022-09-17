@@ -1,0 +1,93 @@
+.banner{
+    background-image:linear-gradient(
+        100deg, 
+        $bg-primary ,
+        $bg-primary-light,
+        $bg-secondary
+        ) ;
+        height: 130vh;
+        position: relative;
+        padding-top: 32rem;
+        clip-path: polygon(51% 0%,100% 0%,100% 100%,75% 78%,0% 100%,0% 0%);
+        overflow: hidden;
+        
+
+        @include responsive(tab-land){
+            height: 80vh;
+        }
+
+        @include responsive(tab-port){
+            padding-top: 32rem;
+            height: 75vh;
+            clip-path: polygon(51% 0%,100% 0%,100% 100%,75% 85%,0% 100%,0% 0%);
+        }
+        @include responsive(phone){
+            padding-top: 22rem;
+            height: 145vh;
+            clip-path: none;
+        }
+
+        @media (min-height:720px ) and (max-width: 540px){
+            height: 120vh;
+        }
+        @include responsive(small-phone){
+            height: 170vh;
+        }
+
+    &__badge{
+        width: 40%;
+        padding-left: 1.5rem;
+       & span:nth-child(2){
+           float: right;
+       }
+
+        @include responsive(tab-land){
+            width:60%;
+        }
+        @include responsive(phone){
+            width:90%;
+        }
+
+        border-radius: 3px;
+        background: rgba($color-white,.1);
+        font-size: 1.4rem;
+        color:$color-white;
+        text-transform: uppercase;
+
+        
+    }
+
+    &__shapes{
+
+        &--1{
+            position: absolute;
+            top: 5rem;
+        }
+    }
+    &__img{
+        position: absolute;
+        right:5rem;
+        bottom:-20rem;
+        @include responsive(tab-land){
+            bottom: 0;
+            top: 35rem;
+            right: 0;
+
+        }
+        @include responsive(tab-port){
+            display: none;
+        }
+        
+        animation: float 4s ease-in-out infinite ;
+        animation-direction: alternate;
+
+    }
+
+    &__jumbo--text{
+
+        @include responsive(tab-land){
+            max-width: 90%;
+        }
+    }
+ 
+}

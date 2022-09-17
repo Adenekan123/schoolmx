@@ -1,0 +1,54 @@
+.features__2--list{
+    list-style: none;
+
+    &--icon{
+        display: inline-block;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        position: relative;
+
+        &--primary{
+
+            @include responsive(phone){
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+
+        
+
+        &--1{
+            background-image: linear-gradient( to right,$bg-primary,$bg-secondary);
+        }
+        &--2{
+            background-image: linear-gradient( to right, $bg-primary,$bg-primary-light);
+        }
+        & img{
+            height: 4rem;
+            @include center-tool;
+        }
+        & img.img--primary{
+
+            @include responsive(phone){
+                height: 7rem;
+                @include center-tool;
+            }
+            
+        }
+
+        & i{
+            font-size: 3.5rem;
+            color: #fff;
+            @include center-tool;
+        }
+       
+    }
+  
+    &--text{
+        font-size: $default-font-size;
+        @include responsive(tab-port){
+            font-size: 3rem;
+        }
+    }
+}

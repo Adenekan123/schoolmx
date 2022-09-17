@@ -1,0 +1,60 @@
+.padding-tiny{padding:1.5rem !important;}
+.padding-medium{padding:2.5rem !important;}
+.padding-large{padding:4rem !important;}
+.padding-xlarge{padding:8rem!important;}
+
+.padding-y-small{padding: 2rem 0}
+.padding-y-medium{padding: 4rem 0}
+.padding-y-large{padding: 10rem 0}
+
+.padding-trial{padding:.5rem 1.5rem;}
+
+.padding-none{padding:0!important}
+
+.d-none{display:none}
+
+
+.margin-y-small{margin: 2rem 0;}
+.margin-y-medium{margin: 2.5rem 0;}
+.margin-y-large{margin: 7rem 0 !important}
+.margin-y-xlarge{margin: 15rem 0 !important}
+
+
+.margin-top-small{margin-top: 1rem !important}
+.margin-top-medium{margin-top: 2.5rem !important}
+.margin-top-large{margin-top: 4rem !important}
+.margin-top-xlarge{margin-top: 15rem !important}
+
+.margin-bottom-small{margin-bottom: 1rem !important}
+.margin-bottom-medium{margin-bottom: 2.5rem !important}
+.margin-bottom-large{margin-bottom: 4rem !important}
+.margin-bottom-xlarge{margin-bottom: 7rem !important}
+
+.margin-right-small{margin-right:2rem!important}
+.margin-right-medium{margin-right:7rem!important}
+
+@include responsive(tab-port){
+    .margin-right-small{margin-right:4rem!important}
+    .margin-right-medium{margin-right:10rem!important}       
+}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+
+.w-100{width:100%;}
+
+
+.badge{
+    display: inline-block;
+    padding:0 1.5rem;
+    border-radius:3px;
+    transform: translateX(1rem);
+}
+
+.badge-light{
+    background-color:$color-white;
+    color:$color-black;
+    text-transform: capitalize;
+}

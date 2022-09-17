@@ -1,0 +1,124 @@
+.card{
+    border-radius: 6px;
+    box-shadow: 0 .8rem 1.5rem rgba($color-black, .1);
+    font-size: $default-font-size;
+    overflow: hidden;
+
+    @include responsive(tab-port){
+        font-size: 3rem;
+    }
+
+
+    &__content{
+        padding:2rem;
+        @include responsive(tab-port){
+            padding:4rem;
+        }
+    }
+
+    &:hover &__header--img{
+        opacity: .5;
+        transform:scale(1.1);
+    }   
+
+    &__header{
+        text-align: center;
+        padding: 4rem 2rem;
+        border-bottom: 1px solid $color-grey-light;
+        position: relative;
+        overflow: hidden;
+
+        @include responsive(tab-port){
+            padding: 6rem 3rem;
+        }
+
+        &--img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height:auto;
+            @include responsive(tab-land){
+                height:25rem;
+            }
+            @include responsive(tab-port){
+                height:70rem;
+            }
+            @include responsive(phone){
+                height:38rem;
+            }
+            width: 100%;
+            transition: all .3s ease-in-out ;
+            height: 35rem;
+            // transform: scale(0.97);
+
+        }
+
+    }
+
+    &__gradient{
+        height: 30rem;
+        @include responsive(tab-land){
+            height:25rem;
+        }
+        @include responsive(tab-port){
+            height:70rem;
+        }
+        @include responsive(phone){
+            height:38rem;
+        }
+        width: 100%;
+        
+        &--1{
+            background: linear-gradient(to right, $bg-primary,$bg-secondary);
+        }
+        &--2{
+            background: linear-gradient(to right, $bg-primary,$bg-primary-light);
+        }
+        &--3{
+            background: linear-gradient(to right, $bg-secondary,$color-grey-light);
+        }
+    }
+
+
+    &__body{
+        padding: 3rem 2rem;
+        text-align: center;
+        background-color: $color-white;
+        @include responsive(tab-port){
+            padding: 6rem 4rem;
+
+        }        
+    }
+
+    &__list{
+        list-style: none;
+        color: darken($color-grey-light,30);
+
+        &--item{
+            
+            @include responsive(tab-port){
+                margin-bottom:3rem;
+            }
+        }
+    }
+
+    &__text--small{
+        display: block;
+        text-transform: uppercase;
+        color: darken($color-grey-light,30);
+        font-size: 1.3rem;
+    }
+
+   
+    &__btn--link{
+        padding:.2rem 3rem;
+        font-size: 3rem;
+        border-radius: 2rem;
+        background-color:  $bg-secondary;
+        color: $color-white;
+        text-decoration: none;
+        box-shadow: 0 .4rem 1rem rgba($color-black, .1);
+    }
+
+
+}

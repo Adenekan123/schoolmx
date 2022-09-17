@@ -1,0 +1,223 @@
+.header{
+    background-color: $color-black;
+    padding: 3rem;
+    z-index: 1;
+    transition:all .5s ;
+    @include clearfix;
+
+    &::before{
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform:rotateX(90deg);
+        opacity: 0;
+        perspective: 1000rem;
+        transition:all .4s;
+    }
+
+
+   &__logo{
+
+        &--text{
+            font-size:3rem;
+            color: $color-white;
+        }
+    }
+    &__item{
+        float:left;
+        text-align: center;
+        line-height: 5rem;
+
+        @include responsive(tab-port){
+            float: none;
+        }
+        
+
+        &--1{
+            width:16.666667%;
+            
+        }
+        &--2{
+            width:66.66666667%;
+        }
+        &--3{
+            width:16.666667%;
+            @include responsive(tab-port){
+                display:none;
+            }
+        }
+       
+
+    }
+
+    &__bg{
+
+        & li a,
+        & .header__logo--text{
+            color: $color-black;
+        }
+
+        & .header__logo--text{
+            font-size: 4rem;
+        }
+
+        &::before{
+            content:"";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // background: linear-gradient(to right,rgba($bg-primary-light,.8),rgba($bg-secondary,.8));
+            background: rgba($color-white,.7);
+            -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(2px);
+            z-index: -1;
+            box-shadow: 0 .1rem 1.5rem 0 rgba($color-black,.2);
+
+            transform:rotateX(0deg);
+            opacity: 1;
+        }
+    }
+
+
+}
+
+.navigation{
+   transition:all.5s;
+
+    &__list{
+        list-style: none;
+        font-size: $default-font-size;    
+        @include clearfix;
+
+        @include responsive(tab-port){
+            width: 50%;
+            padding-left: 5rem;
+            text-align:left;
+            font-size:4rem;
+            color: $color-black;
+            // border: 2px solid;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+
+        &--item{
+            float:left;
+            width: calc(100%/6);
+
+            @include responsive(tab-port){
+                float:none;
+                width: 100%;
+                margin-bottom: 4rem;
+            }
+
+        }
+
+        &--link{
+            text-decoration: none;
+            color: $color-grey-light;
+
+            @include responsive(tab-port){
+                color:$color-black;
+            }
+            
+        }
+    }
+}
+
+.home-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+
+}
+
+[id="toggler"]{
+
+    @include responsive(tab-port){
+        // display: block;
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
+        z-index: 100;
+
+        &+label{
+            display: block;
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            position: fixed;
+            font-size: 5rem;
+            top: 2rem;
+            right: 5rem;
+            background: $color-white;
+            box-shadow: 0 .2rem 1rem rgba($bg-primary,.2);
+            transition:all .5s;
+            z-index: 100;
+
+            &::before{
+                content: "\2630";
+                display: block;
+                font-size: 5rem;
+                color: $color-black;
+                @include center-tool;
+            }
+        }
+
+
+        & ~ .navigation{
+            backdrop-filter: blur(50px);
+            position: fixed;
+            width:0px;
+            visibility: hidden;
+            opacity: 0;
+            height: 100vh;
+            left: 0;
+            top: 0;
+        
+            background:linear-gradient(
+                to right,
+                $color-grey-dark 0%,
+                $color-grey-dark 50%,
+                rgba($color-black,.8) 50%,
+            );
+
+            @include responsive(phone){
+                background:linear-gradient(
+                    to right,
+                    $color-grey-dark 0%,
+                    $color-grey-dark 65%,
+                    rgba($color-black,.8) 65%,
+                );
+            }
+        }
+    
+        &:checked ~ .navigation{
+            width:100%;
+            opacity:1;
+            visibility: visible;
+        }
+        &:checked + label::before{
+            content: "\2716";
+            transform: translate(-50%,-50%) rotate(360deg);
+            
+            transition:all .5s;
+        }
+
+
+    }
+
+   
+}

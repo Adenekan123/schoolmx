@@ -1,0 +1,268 @@
+.features{
+
+        @include responsive(phone){
+            padding-top:5rem;
+        }
+
+    &__card{
+        padding: 3rem 2rem;
+
+        @include responsive(tab-land){
+            // padding: 3rem 6rem ;
+        }
+        @include responsive(tab-port){
+            padding: 6rem 3rem;
+        }
+
+        text-align: center;
+    }
+
+    &__img{
+        height: 6rem;
+        @include responsive(tab-land){
+            height: 4rem;
+        }
+        @include responsive(tab-port){
+            height: 10rem;
+        }
+
+    }
+    &__text{
+        font-size: 1.8rem;
+       
+
+        @include responsive(tab-land){
+           line-height:3rem;
+        }
+        @include responsive(tab-port){
+            font-size: 3rem;
+            margin-top: 3rem;
+        }
+        text-transform: capitalize;
+    }
+    
+}
+
+.section-tools{
+    overflow: hidden;
+    padding: $global-margin;
+    background-color: $color-grey-secondary;
+    font-size: 1.8rem;
+    padding-bottom:28rem;
+
+    @include responsive(tab-port){
+        font-size: 3rem;
+        padding: 5rem;
+        padding-bottom:28rem;
+
+    }
+    @include responsive(phone){
+        font-size: 3rem;
+        padding: 5rem;
+        padding-bottom:12rem;
+
+    }
+}
+
+//section video
+
+.video{
+    height: 50rem;
+    background-image: linear-gradient(
+        rgba($bg-primary,.8),
+        rgba($bg-secondary,.6) 
+        ), url('../img/video.jpg');
+    transform:translateY(-25rem);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    @include responsive(phone){
+        height: 30rem;
+        transform:translateY(-17rem);
+    }
+
+    &__content{
+        color: $color-white;
+        text-align: center;
+        @include center-tool;
+
+    }
+
+    &__rating{
+        text-align: center;
+        font-size: 1.8rem;
+
+        @include responsive(phone){
+            font-size: 2rem;
+            margin-top:4rem;
+        }
+    }
+
+    &__play{
+        display: inline-block;
+        width:8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background-color:$color-white;
+        color: $color-black;
+        font-size: 7rem;
+        position: relative;
+        cursor: pointer;
+        // @include center-tool;
+
+        &::before{
+            content: "";
+            width:8rem;
+            height: 8rem;
+            border-radius:50%;
+            display: inline-block;
+            border: 1px solid $color-grey-light;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            animation-name: video__buzz2;
+            animation-duration:1.2s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;        }
+        &::after{
+            content: "";
+            width:8rem;
+            height: 8rem;
+            border-radius:50%;
+            display: inline-block;
+            border: 1px solid $color-grey-light;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            animation-name: video__buzz;
+            animation-duration:1.2s;
+            // animation-delay: 2.3s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+        &:hover{
+            background-color:$bg-secondary;
+            color: $color-white;
+
+            &::before{
+                animation-play-state: paused;
+            }
+            &::after{
+                animation-play-state: paused;
+            }
+        }
+
+       
+
+
+
+        & span{
+           display:block;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-40%, -60%);
+        }
+    }
+    &__dot{
+        display: inline-block;
+        width:1rem;
+        height: 1rem;
+        margin-right: .5rem;
+        border-radius: 50%;
+
+
+        &--1{
+            background-color: green;
+        }
+        &--2{
+            background-color: rgb(184, 5, 238);
+        }
+        &--3{
+            background-color: rgb(9, 0, 128);
+        }
+        &--4{
+            background-color: rgb(209, 152, 7);
+        }
+    
+    }
+
+    &__row{
+        transform: translateY(-15rem);
+        padding-bottom: 10rem;
+        border-bottom: 1px solid $color-grey-light;
+
+        @include responsive(phone){
+            padding-bottom: 5rem;
+            transform: translateY(-10rem);
+        }
+
+    }
+}
+
+.section-testomial{
+    overflow: hidden;
+    padding: $global-margin;
+    background-color: $color-grey-secondary;
+    font-size: 1.8rem;
+
+    @include responsive(tab-land){
+        padding: 5rem;
+    }
+    @include responsive(tab-port){
+        font-size: 3rem;
+    }
+}
+
+.section-brands{
+    overflow: hidden;
+    padding: $global-margin;
+    background-color: $bg-primary;
+
+    @include responsive(tab-land){
+        padding: 5rem;
+    }
+}
+
+.section-news {
+    padding: $global-margin;
+    background-color: $color-grey-secondary;
+    overflow: hidden;
+    
+    @include responsive(tab-land){
+        padding: 5rem;
+    }
+}
+.section-contact {
+    padding: $global-margin;
+    @include responsive(tab-land){
+        padding: 5rem;
+    }
+
+}
+
+.section-download{
+    padding: 20rem;
+    overflow: hidden;
+    height: 70rem;
+
+    @include responsive(tab-land){
+        padding: 2rem;
+    }
+    
+    
+
+}
+
+// .footer{
+//     margin-top: 2rem;
+// }
+
+
+

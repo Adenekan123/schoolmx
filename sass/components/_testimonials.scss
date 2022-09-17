@@ -1,0 +1,111 @@
+.client{
+  width: 42rem;
+  height: 42rem;
+  border-radius: 50%;
+  @include center-tool;
+  background-color: lighten($color-grey-light,10);
+  
+  @include responsive(phone){
+    width: 32rem;
+    height: 32rem;
+  }
+
+  &::before{
+      content:"";
+      display: block;
+      width: 34rem;
+      height: 34rem;
+      border-radius: 50%;
+      position: absolute;
+      @include center-tool;
+      background-color: lighten($color-grey-light,7);
+
+      @include responsive(phone){
+        width: 25rem;
+        height: 25rem;
+      }
+  }
+  &::after{
+      content:"";
+      display: block;
+      width: 26rem;
+      height: 26rem;
+      border-radius: 50%;
+      position: absolute;
+      @include center-tool;
+      
+      background-color: lighten($color-grey-light,5);
+
+      @include responsive(phone){
+        width: 16rem;
+        height: 16rem;
+      }
+  }
+
+  &__container{
+     width: 43.5rem;
+     height: 43.5rem;
+     border-radius: 50%;
+     background-image: linear-gradient(to right, $bg-primary, $bg-secondary);
+     position: relative;
+
+     @include responsive(phone){
+        width: 33.5rem;
+        height: 33.5rem;
+      }
+
+  }
+
+
+  &__icon--box{
+      position: absolute;
+      width:7rem;
+      height: 7rem;
+      border-radius: 50%;
+      background-color: $color-white;
+      box-shadow: 0 .2rem 1rem rgba($color-black,.2);
+      font-size: 3.5rem;
+      text-align: center;
+
+      &--1{
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%,50%);
+      }
+      &--2{
+          top: 70%;
+          left: 0;
+          transform: translate(-20%,-50%);
+      }
+      &--3{
+          top: 70%;
+          right: 0;
+          transform: translate(20%,-50%);
+      }
+      &--4{
+          top: 0;
+          left: 50%;
+          transform: translate(-50%,-50%);
+      }
+      &--5{
+          top: 25%;
+          right: 0;
+          transform: translate(15%,-50%);
+      }
+      &--6{
+          top: 25%;
+          left: 0;
+          transform: translate(-15%,-50%);
+      }
+  }
+
+  &__icon{
+      display: block;
+      @include center-tool;
+  }
+
+  &__text{
+    @include center-tool;
+
+  }
+}
